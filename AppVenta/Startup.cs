@@ -63,6 +63,8 @@ namespace AppVenta
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                //1 nombree ruta 2. nombre area 3. Patron 
+                endpoints.MapAreaControllerRoute("Users","Users", "{controller=Users}/{action=Users}/{id?}");
                 endpoints.MapRazorPages();
             });
         }

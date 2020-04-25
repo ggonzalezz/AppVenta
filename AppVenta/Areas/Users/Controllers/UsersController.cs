@@ -9,7 +9,7 @@ namespace AppVenta.Areas.Users.Controllers
     [Area("Users")]
     public class UsersController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Users()
         {
             return View();
         }
